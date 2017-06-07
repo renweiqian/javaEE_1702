@@ -7,10 +7,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <title>index page</title>
+</head>
+<body>
+<form action="login.jsp">
+  <input type="text" name="mobile" placeholder="手机号"><br>
+  <input type="password" name="password" placeholder="密码"><br>
+  <input type="submit" value="登录">
+</form>
+<a href="signup.jsp">注册</a>
+</body>
 </html>
