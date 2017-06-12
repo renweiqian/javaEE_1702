@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
             resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 req.getSession().setAttribute("nick", resultSet.getString("nick"));
-                req.getRequestDispatcher("home.jsp")
+                req.getRequestDispatcher("home.jsp");
             } else {
                 req.setAttribute("message", "手机名或密码错误");
                 req.getRequestDispatcher("index.jsp").forward(req, resp);
